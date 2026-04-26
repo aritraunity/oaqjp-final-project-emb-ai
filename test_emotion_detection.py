@@ -1,0 +1,3 @@
+import unittest
+from EmotionDetection.emotion_detector import emotion_detector
+

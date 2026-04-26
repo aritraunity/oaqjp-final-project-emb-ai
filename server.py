@@ -14,7 +14,7 @@ def sent_emotion_detector():
     text_to_analyze = request.args.get("textToAnalyze")
     result = emotion_detector(text_to_analyze)
     if result['anger'] == None:
-        return "nvalid text! Please try again!"
+        return "Invalid text! Please try again!"
 
     anger = result['anger']
     disgust = result['disgust']
